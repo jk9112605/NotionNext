@@ -104,6 +104,7 @@ const GlobalHead = props => {
       />
       <meta name='robots' content='follow, index' />
       <meta charSet='UTF-8' />
+      
       {SEO_GOOGLE_SITE_VERIFICATION && (
         <meta
           name='google-site-verification'
