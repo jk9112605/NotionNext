@@ -104,7 +104,8 @@ const GlobalHead = props => {
       />
       <meta name='robots' content='follow, index' />
       <meta charSet='UTF-8' />
-      
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5604761970170883"
+     crossorigin="anonymous"></script>
       {SEO_GOOGLE_SITE_VERIFICATION && (
         <meta
           name='google-site-verification'
