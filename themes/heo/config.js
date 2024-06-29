@@ -5,8 +5,8 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '歡迎來到我的部落格', url: 'https://jk1124.vercel.app/' },
-    { title: 'Welcome to my blog', url: 'https://jk1124.vercel.app/' }
+    { title: '歡迎來到我的部落格', url: 'https://jk1124.netlify.app/' },
+    { title: 'Welcome to my blog', url: 'https://jk1124.netlify.app/' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -18,11 +18,11 @@ const CONFIG = {
   //英雄區左側
   HEO_HERO_TITLE_1: 'Learning',
   HEO_HERO_TITLE_2: 'Sharing',
-  HEO_HERO_TITLE_3: 'jk1124.vercel.app',
+  HEO_HERO_TITLE_3: 'jk1124.netlify.app',
   //英雄區右側
   HEO_HERO_TITLE_4: '如何使用本部落格',
   HEO_HERO_TITLE_5: '部落格使用說明與文章介紹',
-  HEO_HERO_TITLE_LINK: 'https://jk1124.vercel.app/introduction',
+  HEO_HERO_TITLE_LINK: 'https://jk1124.netlify.app/introduction',
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '必看精選', url: '/tag/必看精選' },
