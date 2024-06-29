@@ -25,7 +25,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'jk', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || 'Learning and sharing', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://jk1124.vercel.app', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://jk1124.netlify.app', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, coding, blog', // 网站关键词 英文逗号隔开
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
@@ -66,7 +66,8 @@ const BLOG = {
   // 无衬线字体 例如'"LXGW WenKai"'
   FONT_SANS: [
     // '"LXGW WenKai"',
-    '"PingFang SC"',
+    'Roboto',
+    '"PingFang TC"',
     '-apple-system',
     'BlinkMacSystemFont',
     '"Hiragino Sans GB"',
@@ -74,11 +75,11 @@ const BLOG = {
     '"Segoe UI Emoji"',
     '"Segoe UI Symbol"',
     '"Segoe UI"',
-    '"Noto Sans SC"',
+    '"Noto Sans TC"',
     'HarmonyOS_Regular',
     '"Helvetica Neue"',
     'Helvetica',
-    '"Source Han Sans SC"',
+    '"Source Han Sans TC"',
     'Arial',
     'sans-serif',
     '"Apple Color Emoji"'
@@ -86,8 +87,8 @@ const BLOG = {
   // 衬线字体 例如'"LXGW WenKai"'
   FONT_SERIF: [
     // '"LXGW WenKai"',
-    'Bitter',
-    '"Noto Serif SC"',
+    'Roboto',
+    '"Noto Serif TC"',
     'SimSun',
     '"Times New Roman"',
     'Times',
@@ -451,7 +452,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_ANALYTICS_ACKEE_DOMAIN_ID || '', // e.g '82e51db6-dec2-423a-b7c9-b4ff7ebb3302'
 
   SEO_GOOGLE_SITE_VERIFICATION:
-    process.env.NEXT_PUBLIC_SEO_GOOGLE_SITE_VERIFICATION || 'n7IyzI5Hy7yo2C5rQSSYN-2qG4fvfmLUF4l7-c7ZZyM', // Remove the value or replace it with your own google site verification code
+  process.env.NEXT_PUBLIC_SEO_GOOGLE_SITE_VERIFICATION || 'n7IyzI5Hy7yo2C5rQSSYN-2qG4fvfmLUF4l7-c7ZZyM', // Remove the value or replace it with your own google site verification code
 
   SEO_BAIDU_SITE_VERIFICATION:
     process.env.NEXT_PUBLIC_SEO_BAIDU_SITE_VERIFICATION || '', // Remove the value or replace it with your own google site verification code
