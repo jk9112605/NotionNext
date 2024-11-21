@@ -1,4 +1,7 @@
 const CONFIG = {
+  HEO_HOME_POST_TWO_COLS: true, // 首页博客两列显示，若为false则只显示一列
+  HEO_LOADING_COVER: true, // 页面加载的遮罩动画
+
   HEO_HOME_BANNER_ENABLE: true,
 
   HEO_SITE_CREATE_TIME: '2024-04-10', // 建站日期，用于计算网站运行的第几天
@@ -15,11 +18,9 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  //英雄區左側
   HEO_HERO_TITLE_1: 'Learning',
   HEO_HERO_TITLE_2: 'Sharing',
   HEO_HERO_TITLE_3: 'jk1124.netlify.app',
-  //英雄區右側
   HEO_HERO_TITLE_4: '如何使用本部落格',
   HEO_HERO_TITLE_5: '部落格使用說明與文章介紹',
   HEO_HERO_TITLE_LINK: 'https://jk1124.netlify.app/introduction',
@@ -28,6 +29,8 @@ const CONFIG = {
   HEO_HERO_CATEGORY_1: { title: '必看精選', url: '/tag/必看精選' },
   HEO_HERO_CATEGORY_2: { title: '熱門文章', url: '/tag/熱門文章' },
   HEO_HERO_CATEGORY_3: { title: '實用教學', url: '/tag/實用教學' },
+  // 英雄区遮罩文字
+  HEO_HERO_COVER_TITLE: 'Just browsing around',
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推薦',
@@ -44,7 +47,14 @@ const CONFIG = {
     '🤖️ 數位科技愛好者',
     '🧱 團隊小組發動機'
   ],
-  HEO_INFO_CARD_URL: 'https://github.com/jk9112605', // 个人资料底部按钮链接
+
+  // 个人资料底部按钮
+  HEO_INFO_CARD_URL1: '/about',
+  HEO_INFO_CARD_ICON1: 'fas fa-user',
+  HEO_INFO_CARD_URL2: 'https://github.com/jk9112605',
+  HEO_INFO_CARD_ICON2: 'fab fa-github',
+  HEO_INFO_CARD_URL3: 'https://jk1124.netlify.com',
+  HEO_INFO_CARD_TEXT3: '本站連結',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
