@@ -64,10 +64,10 @@ const LayoutBase = props => {
       className='flex flex-col min-h-screen justify-between'>
       <Style />
 
-      {/* 顶部导航 */}
-      <Header {...props} />
+      {/* 頂部導航，根據參數決定是否顯示 */}
+      {CONFIG.COMMERCE_HEADER_SHOW && <Header {...props} />}
 
-      {/* 顶部嵌入 */}
+      {/* 頂部嵌入 */}
       <div>{headerSlot}</div>
 
       {/* 主区块 */}
@@ -125,7 +125,7 @@ const LayoutIndex = props => {
   return (
     <>
       {/* 产品中心 */}
-      <ProductCenter {...props} />
+      {CONFIG.COMMERCE_PRODUCT_CENTER_SHOW && <ProductCenter {...props} />}
 
       {/* 首页企业/品牌介绍 这里展示公告 */}
       {notice && (

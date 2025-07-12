@@ -91,7 +91,7 @@ const Footer = props => {
                   <div className='flex space-x-4 text-2xl'>
                     {JSON.parse(
                       siteConfig(
-                        'COMMERCE_CONTACT_WHATSAPP_SHOW',
+                        'COMMERCE_CONTACT_LINE_SHOW',
                         null,
                         CONFIG
                       ),
@@ -102,9 +102,9 @@ const Footer = props => {
                           <a
                             target='_blank'
                             rel='noreferrer'
-                            href={siteConfig('CONTACT_WHATSAPP', '#', CONFIG)}
-                            title={'telegram'}>
-                            <i className='transform hover:scale-125 duration-150 fa-brands fa-whatsapp dark:hover:text-red-400 hover:text-red-600' />
+                            href={siteConfig('CONTACT_LINE', '#', CONFIG)}
+                            title={'line'}>
+                            <i className='transform hover:scale-125 duration-150 fa-brands fa-line dark:hover:text-green-400 hover:text-green-600' />
                           </a>
                         }
                       </div>
