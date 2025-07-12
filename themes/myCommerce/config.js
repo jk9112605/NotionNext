@@ -9,6 +9,7 @@ const CONFIG = {
   COMMERCE_TEXT_FOOTER_TITLE: '聯絡我們', // COMMERCE主题页脚文案标题；按Shift+Enter键可以换行
   COMMERCE_TEXT_FOOTER_MENU_1: '彥騰推甄家教中心', // COMMERCE主题页脚左侧菜单标题1
   COMMERCE_TEXT_FOOTER_MENU_2: '歷年輔導同學成果', // COMMERCE主题页脚左侧菜单标题2
+  COMMERCE_TEXT_FOOTER_MENU_2_SHOW: false, // 是否顯示第二個footer menu
 
   COMMERCE_FOOTER_RIGHT_IMG_URL: null, // 显示页脚右侧的图片，通常放二维码
   COMMERCE_FOOTER_RIGHT_TEXT: null, // 页脚右侧图片下的文字描述

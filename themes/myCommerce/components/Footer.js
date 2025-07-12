@@ -52,27 +52,29 @@ const Footer = props => {
               </nav>
             </div>
 
-            {/* 系统菜单  */}
-            <div>
-              <div className='font-bold mb-4 text-white'>
-                {siteConfig('COMMERCE_TEXT_FOOTER_MENU_2', 'About US', CONFIG)}
+            {/* 系統菜單  */}
+            {CONFIG.COMMERCE_TEXT_FOOTER_MENU_2_SHOW && (
+              <div>
+                <div className='font-bold mb-4 text-white'>
+                  {siteConfig('COMMERCE_TEXT_FOOTER_MENU_2', 'About US', CONFIG)}
+                </div>
+                <nav
+                  id='home-nav-button'
+                  className={'flex flex-col space-y-2 text-start'}>
+                  {customMenu?.map(menu => {
+                    return (
+                      <Link
+                        key={`${menu.name}`}
+                        title={`${menu.name}`}
+                        href={`${menu.href}`}
+                        passHref>
+                        {menu.name}
+                      </Link>
+                    )
+                  })}
+                </nav>
               </div>
-              <nav
-                id='home-nav-button'
-                className={'flex flex-col space-y-2 text-start'}>
-                {customMenu?.map(menu => {
-                  return (
-                    <Link
-                      key={`${menu.name}`}
-                      title={`${menu.name}`}
-                      href={`${menu.href}`}
-                      passHref>
-                      {menu.name}
-                    </Link>
-                  )
-                })}
-              </nav>
-            </div>
+            )}
           </div>
 
           {/* 页脚右侧联系方式 */}
