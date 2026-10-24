@@ -385,6 +385,18 @@ const ExternalPlugin = props => {
         </>
       )}
 
+      {/* Google AdSense 代码与所有权验证 */}
+      {ADSENSE_GOOGLE_ID && (
+        <Head>
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_GOOGLE_ID}`}
+            crossOrigin='anonymous'
+          />
+          <meta name='google-adsense-account' content={ADSENSE_GOOGLE_ID} />
+        </Head>
+      )}
+
       {/* HILLTOP广告验证 */}
       {HILLTOP_ADS_META_ID && (
         <Head>
